@@ -54,7 +54,7 @@ VIDEO #2:
 https://youtu.be/zoI_xMJVHv8
 
 
-## <p align="center"> LICENCIA DEL PROYECTO Y CREDITOS </p>
+## <p align="center"> CREDITOS </p>
 
 El proyecto en su totalidad es (c) 2022 RICARDO JAVIER CALCAGNO, de LIBRE DISTRIBUCION para su uso recreacional y privado. El uso comercial se encuentra TERMINANTEMENTE PROHIBIDO, salvo expresa autorización de su autor. Asimismo, DEBE CITARSE este trabajo en cualquier desarrollo posterior basado en el mismo.
 El desarrollo de la interface fue posible, y se basó en gran medida, en los siguientes proyectos:
