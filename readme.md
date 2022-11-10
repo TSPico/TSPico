@@ -54,36 +54,6 @@ VIDEO #2:
 https://youtu.be/zoI_xMJVHv8
 
 
-## <p align="center"> CREDITOS </p>
-
-El proyecto en su totalidad es (c) 2022 RICARDO JAVIER CALCAGNO, de LIBRE DISTRIBUCION para su uso recreacional y privado. El uso comercial se encuentra TERMINANTEMENTE PROHIBIDO, salvo expresa autorización de su autor. Asimismo, DEBE CITARSE este trabajo en cualquier desarrollo posterior basado en el mismo.
-El desarrollo de la interface fue posible, y se basó en gran medida, en los siguientes proyectos:
-
-- El grueso del desarrollo se basa en el trabajo realizado a comienzos de 2000 por Dr Beep, para su interface PC-ZX, originalmente pensada para el ZX Spectrum. El proyecto puede consultarse aquí:
-	  
-https://trastero.speccy.org/cosas/JL/DrBeep/PC-ZX.html
-
-De allí se tomaron y adaptaron el circuito, las rutinas SAVE y LOAD en assembler Z80, y se adaptó el programa Pascal a uPython, para la carga de .TAPs, .SNAs y .Z80s. También la rutina de impresión de información en la TS (ZX) originada en el R-Pico (PC). Esto permitía consultar el directorio de información, montar, renombrar o borrar archivos, etc. Esta funcionalidad se incorporará en un futuro a la interface
-
-- La idea de utilizar un R-Pico para implementar la comunicación se tomó de “Life with David”:
-	  
-https://www.youtube.com/c/LifewithDavid1/videos
-
-principalmente los episodios “Captain Pico – The PIO chronicles” 1 a 5, para el uso de PIO como forma de comunicación de alta velocidad entre los buses
-
-- Una introducción más completa a PIO se encuentra en:
-https://www.youtube.com/watch?v=yYnQYF_Xa8g
-
-- Para optimizar la velocidad de ejecución de uPython y consecuentemente la transferencia de datos, se utilizó este video:
-https://www.youtube.com/watch?v=hHec4qL00x0
-
-- Las rutinas de escritura en Flash mediante R-Pico serán similares a las que se pueden encontrar aquí:
-https://github.com/gfoot/picoprom
-
-- Las rutinas de conversión de .TAP a .TZX (y viceversa) fueron adaptadas de:
-https://github.com/shred/tzxtools
-	
-
 
 ## <p align="center"> DESCRIPCION GENERAL </p>
 
@@ -152,5 +122,33 @@ Hasta que habilite la sección de Discusión y la WiKi del proyecto en esta mism
 - Entrada foro Retrocomputacion: *(a completar)*
 - Consultas por correo electrónico: tspico.info@gmail.com
 
+## <p align="center"> CREDITOS </p>
+
+El desarrollo de la interface fue posible, y se basó en gran medida, en los siguientes proyectos:
+
+- El grueso del desarrollo se basa en el trabajo realizado a comienzos de 2000 por Dr Beep, para su interface PC-ZX, originalmente pensada para el ZX Spectrum. El proyecto puede consultarse aquí:
+	  
+https://trastero.speccy.org/cosas/JL/DrBeep/PC-ZX.html
+
+De allí se tomaron y adaptaron el circuito, las rutinas SAVE y LOAD en assembler Z80, y se adaptó el programa Pascal a uPython, para la carga de .TAPs, .SNAs y .Z80s. También la rutina de impresión de información en la TS (ZX) originada en el R-Pico (PC). Esto permitía consultar el directorio de información, montar, renombrar o borrar archivos, etc. Esta funcionalidad se incorporará en un futuro a la interface
+
+- La idea de utilizar un R-Pico para implementar la comunicación se tomó de “Life with David”:
+	  
+https://www.youtube.com/c/LifewithDavid1/videos
+
+principalmente los episodios “Captain Pico – The PIO chronicles” 1 a 5, para el uso de PIO como forma de comunicación de alta velocidad entre los buses
+
+- Una introducción más completa a PIO se encuentra en:
+https://www.youtube.com/watch?v=yYnQYF_Xa8g
+
+- Para optimizar la velocidad de ejecución de uPython y consecuentemente la transferencia de datos, se utilizó este video:
+https://www.youtube.com/watch?v=hHec4qL00x0
+
+- Las rutinas de escritura en Flash mediante R-Pico serán similares a las que se pueden encontrar aquí:
+https://github.com/gfoot/picoprom
+
+- Las rutinas de conversión de .TAP a .TZX (y viceversa) fueron adaptadas de:
+https://github.com/shred/tzxtools
+	
 
 (c) 2022 - RICARDO JAVIER CALCAGNO
