@@ -91,74 +91,72 @@ GENERAL DESCRIPTION
 
 ---
 
-Este es un esquema en bloques de la interface:
-(*a completar*)
+This is a block diagram of the interface:
+(*pending*)
 
-Los accesos a determinadas áreas de memoria (ROM, EXROM, etc) y determinadas operaciones (RD, WR, MREQ, IORQ) se decodifican para así intercalar datos provenientes de la Flash (para accesos ROM, EXROM o DOCK) o desde un archivo de almacenamiento, en caso de lectura o escritura de datos. 
+Specific memory location access (ROM, EXROM, etc) and specific operations (RD, WR, MREQ, IORQ, etc) are decoded so to interleave data from the Flahs (for ROM, EX-ROM or DOCK access) or to/from a storage file in case of data read/write.
 
-El cálculo de temporizaciones es especialmente crítico, ya que pequeñas desviaciones ocasionan errores  en la carga, lectura y accesos a las ROMs alojadas en la flash.
+Timing if of paramount importance, since minimal variations in timing lead to load, read/write and ROM access errors.
 
-La interface hace un uso intensivo de los PIOs del R-Pico para dos fines principales:
+The interface makes intensive use of R-Pico PIOs for two main purposes:
 
+- External ROMs and cartridge images "switching", with images stored in Flash; for this upper memory address bits (A18-A15) are manipulated and set to 0 or 1 depending on the memory access decodified. This external ROMs switching should allow, for instance, the implementation of disk units access (Zebra, Oliger, LarKen, FDD, etc.)
 
-- “Conmutación” de las ROMs internas (y las imágenes de cartucho) de la TS con las imágenes almacenadas en la Flash; para ello se manipulan las direcciones superiores de la Flash (A18-A15), poniendo en 0 o 1 respectivamente las mismas en función del acceso a memoria decodificado. Esta conmutación de ROMs externas debería permitir la implementación, por ejemplo, de acceso a unidades de disco (Zebra, Oliger, LarKen, FDD, etc.)
+- For sending/receiving single octets to/from the TS, mainly via the SAVE/LOAD operations (already implemented), the command/response module or future I/O operations between TS and R-Pico (to be implemented)
 
-- Para la transmisión/recepción de octetos desde/hacia la TS, principalmente en las funciones SAVE y LOAD (implementadas), el módulo de comandos/respuesta o futuras operaciones de I/O entre la TS y el R-Pico (a implementar)
+In both cases, the control signals (MREQ, IORQ, RD, WR, etc) are also accessed by the PIO State Machines (SMs) for correct processing
 
-- En ambos casos, las señales de control (MREQ, IORQ, RD, WR, etc) también son accedidas por las máquinas de estado (SMs) de los PIOs para su correcto procesamiento
+The rest of the interface, as said earlier, consists on discrete ICs for decoding control signals, level adapting between TS (5V) and R-Pico (3.3V) signals, and bus management and assignation. All control signals processing logic, flash ROMs/DCKs addressing, and data transfer (SAVE/LOAD etc) is implemented in uPython programs, completely user-modifiable and customizable
 
-El resto de la interface, como dijimos antes,  consiste en integrados discretos para la decodificación de las señales de control, la adaptación de voltajes entre las señales de la TS (5V) y el R-Pico (3.3v), y el manejo y asignación del bus de datos. Toda la lógica de procesamiento de las señales de control, la asignación de las ROMs/DCKs de la flash y la transferencia de datos (SAVE/LOAD etc) se implementan mediantes programas uPython, totalmente modificables y configurables por el usuario.
 
 <h3> </h3>
-<h3 align="center"> DETALLES TECNICOS </h3>
+<h3 align="center"> TECHNICAL DETAILS </h3>
 
 ---
 
-Como la interface es un prototipo y un trabajo en progreso, la lista de componentes podría variar, pero sirve como orientativa de la sencillez de la misma:
+As the interface is currently a prototype and a work in progress, the components list could vary, but still is useful as an indication of the interface simplicitiy:
 
-- 1 (un) Raspberry Pico (cualquier versión puede servir; con la que tiene 16MB de Flash no sería necesario en principio contar con una SD.
-- 1 (un) integrado Flash, por ejemplo de la familia 39SF (en el prototipo se utilizó un 39SF040 de 4Mbits). Este puede ser sustituido en el diseño por integrados de tipo EEPROM, aunque su costo puede llegar a ser superior
-- Integrados de la familia 74xx: 74LS04, 74LS32, 74LS27, 74LS257: uno cada uno. Para la programación de la flash se necesitan dos 74HCT595 (serial/paralelo); y para la adaptación de niveles lógicos dos 74LVC245. Para el joystick es necesario un 74LS366
-- Si se desea almacenar los archivos .TAP, .TZX, .SNA, .Z80, .DCK etc en una SD Card, es necesario el módulo lector y las bibliotecas para uPython (sdcard.py)
-- Se necesita también la placa impresa, y el conector de borde de 2x32 conectores.
-- Zócalos y pines para los integrados mencionados anteriormente
-- Un número de capacitores de desacople (0.1 uF), interruptores y jumpers
-
-
-<h3 align="center"> ESTADO DEL PROYECTO </h3>
-
----
-
-Esta planilla muestra el grado de avance de los distintos componentes del proyecto:
+- 1 (one) Raspberry Pico (any version should do; the one with 16MB Flash memory would render the SD card almost useless)
+- 1 (one) Flash IC, for instance 39SF family (the prototype used a 4Mbits 39SF040). This could be replaced by an EEPROM, though the cost could be higher
+- Some 74xx family discrete IC: 74LS04, 74LS32, 74LS27, 74LS257: one each. For flash programming, a pair of  74HCT595 (serial/parallel); and for the logical level adapter and bus management function, two 74LVC245 are hired. The joystick interface needs a 74LS366
+- An SD Card reader module is required, if extensive storace of .TAP, .TZX, .SNA, .Z80, .DCK etc files are needed. uPython library (sdcard.py) is also needed
+- The PCB and the edge board (2x32), conveniently trimmed and slotted are also required
+- Sockets for all the above, and a few pins for the jumpers/switches
+- A number of decoupling capacitors (0.1 uF)
 
 
-*(a completar)*
-
-
-
-<h3 align="center"> FUTURO </h3>
+<h3 align="center"> PROJECT STATUS </h3>
 
 ---
 
-Algunas características que se podrían agregar a futuro:
+This table shows the status of the different components of the project
 
-- Una versión con componentes SMD, para reducir el tamaño
-- Implementación de funciones de vuelco de regiones de memoria desde/hacia SD (símil memoria virtual)
-- Emulación de unidades de disco (Zebra, Oliger, LarKen, FDD, etc.)
-- *(a completar)*
+*(pending)*
 
 
 
-<h3 align="center"> MAS INFORMACION </h3>
+<h3 align="center"> FUTURE </h3>
 
 ---
 
-Hasta que habilite la sección de Discusión y la WiKi del proyecto en esta misma página, dejo una entrada a los dos grupos de discusión donde se podrá consultar más información actualizada, y también dejo un correo electrónico por cualquier consulta puntual:
+Some features that could be added in the future:
+
+- An SMD version, to reduce size
+- Memory dump to/from SD implementation, as in virtual memory
+- Disk units emulation (Zebra, Oliger, LarKen, FDD, etc.)
+- *(pending)*
 
 
-- Entrada grupo Timex Sinclair 2068 (en inglés): *(a completar)*
-- Entrada foro Retrocomputacion: *(a completar)*
-- Consultas por correo electrónico: tspico.info@gmail.com
+
+<h3 align="center"> MORE INFO </h3>
+
+---
+
+Until the Discussion and WiKi sections are enabled, more up-to-date info an details can be obtained from the discussion threads above. Also, an email address is provided for specific questions:
+
+- Entrada Timex Sinclair 2068 group: *(pending)*
+- Retrocomputacion Forum entry (in spanish): *(pending)*
+- Email address for questions: tspico.info@gmail.com
 
 
 (c) 2022 - RICARDO JAVIER CALCAGNO
