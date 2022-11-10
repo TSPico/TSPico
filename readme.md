@@ -1,14 +1,10 @@
-# TS Pico
-
+# <p align="center"> TS Pico </p>
 
 ## <img src="/static/english.png" alt="Español" width="50"> </img>     [English version here](readme_en.md)
 
 <img src="/static/spanish.png" alt="Español" width="50"> 
-<h3 align="center">Interconexión de una TS-2068 (y probablemente otros microcomputadores basados en Z80)
-con un Raspberry Pico,para cargar/grabar programas y enviar/recibir datos arbitrarios
-</h3>
 
----
+## <p align="center"> Interconexión de una TS-2068 (y probablemente otros microcomputadores basados en Z80) con un Raspberry Pico,para cargar/grabar programas y enviar/recibir datos arbitrarios </p>
 
 Luego de más un año de desarrollo, varios prototipos fallidos y una TS 2068 seriamente averiada en el camino, la interface TS-Pico finalmente está en condiciones de ser presentada en público. La misma permite vincular una TS 2068 (y, con modificaciones, seguramente muchos otros sistemas basados en Z80) a un Rasberry Pico (R-Pico) para almacenamiento y carga de programas (.TAP y .TZX) e imágenes (.SNA, .Z80). La interface además permite la conmutación de ROMs tanto pricipal (HOME ROM) como extendida (EX-ROM), con imágenes almacenadas en una memoria flash externa (no es necesaria NINGUNA MODIFICACIÓN INTERNA al hardware original), y por el mismo método, la simulación de cartuchos en formato .DCK. 
 
@@ -43,11 +39,8 @@ Salvo algunas cuestiones de ajuste fino en algunas temporizaciones, el grueso de
 La administración de la interface puede darse, como actualmente, interactuando con el R-Pico mediante la conexión USB y la PC/notebook (para el desarrollo se utilizó Thonny por ejemplo), o bien utilizando un front-end, programado en BASIC y lenguaje máquina. Este front end está pendiente de desarrollo actualmente.
 
 
-<h3 align="center">
-VIDEOS
-</h3>
+## <p align="center">  VIDEOS </p>
 
----
 
 A continuación, un par de videos de la placa en funcionamiento. Para más detalles, ver las referencias en el mismo video
 
@@ -60,11 +53,8 @@ https://youtu.be/ASCslXNy0ak
 VIDEO #2:
 https://youtu.be/zoI_xMJVHv8
 
-<h3 align="center">
-LICENCIA DEL PROYECTO Y CREDITOS
-</h3>
 
----
+## <p align="center"> LICENCIA DEL PROYECTO Y CREDITOS </p>
 
 El proyecto en su totalidad es (c) 2022 RICARDO JAVIER CALCAGNO, de LIBRE DISTRIBUCION para su uso recreacional y privado. El uso comercial se encuentra TERMINANTEMENTE PROHIBIDO, salvo expresa autorización de su autor. Asimismo, DEBE CITARSE este trabajo en cualquier desarrollo posterior basado en el mismo.
 El desarrollo de la interface fue posible, y se basó en gran medida, en los siguientes proyectos:
@@ -95,11 +85,8 @@ https://github.com/shred/tzxtools
 	
 
 
-<h3 align="center">
-DESCRIPCION GENERAL
-</h3>
+## <p align="center"> DESCRIPCION GENERAL </p>
 
----
 
 Este es un esquema en bloques de la interface:
 (*a completar*)
@@ -119,10 +106,8 @@ La interface hace un uso intensivo de los PIOs del R-Pico para dos fines princip
 
 El resto de la interface, como dijimos antes,  consiste en integrados discretos para la decodificación de las señales de control, la adaptación de voltajes entre las señales de la TS (5V) y el R-Pico (3.3v), y el manejo y asignación del bus de datos. Toda la lógica de procesamiento de las señales de control, la asignación de las ROMs/DCKs de la flash y la transferencia de datos (SAVE/LOAD etc) se implementan mediantes programas uPython, totalmente modificables y configurables por el usuario.
 
-<h3> </h3>
-<h3 align="center"> DETALLES TECNICOS </h3>
+## <p align="center">  DETALLES TECNICOS </p>
 
----
 
 Como la interface es un prototipo y un trabajo en progreso, la lista de componentes podría variar, pero sirve como orientativa de la sencillez de la misma:
 
@@ -135,9 +120,8 @@ Como la interface es un prototipo y un trabajo en progreso, la lista de componen
 - Un número de capacitores de desacople (0.1 uF), interruptores y jumpers
 
 
-<h3 align="center"> ESTADO DEL PROYECTO </h3>
+## <p align="center">  ESTADO DEL PROYECTO </p>
 
----
 
 Esta planilla muestra el grado de avance de los distintos componentes del proyecto:
 
@@ -146,9 +130,8 @@ Esta planilla muestra el grado de avance de los distintos componentes del proyec
 
 
 
-<h3 align="center"> FUTURO </h3>
+## <p align="center">  FUTURO </p>
 
----
 
 Algunas características que se podrían agregar a futuro:
 
@@ -159,9 +142,8 @@ Algunas características que se podrían agregar a futuro:
 
 
 
-<h3 align="center"> MAS INFORMACION </h3>
+## <p align="center">  MAS INFORMACION </p>
 
----
 
 Hasta que habilite la sección de Discusión y la WiKi del proyecto en esta misma página, dejo una entrada a los dos grupos de discusión donde se podrá consultar más información actualizada, y también dejo un correo electrónico por cualquier consulta puntual:
 
