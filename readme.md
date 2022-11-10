@@ -1,4 +1,7 @@
-<h1 align="center">TS Pico</h1>
+# TS Pico
+
+
+## <img src="/static/english.png" alt="Español" width="50"> </img>     [English version here](readme_en.md)
 
 <img src="/static/spanish.png" alt="Español" width="50"> 
 <h3 align="center">Interconexión de una TS-2068 (y probablemente otros microcomputadores basados en Z80)
