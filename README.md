@@ -17,6 +17,12 @@ Interface TS-Pico
 
 INTRODUCCION
 
+
+
+
+
+
+
 	Luego de más de dos años de desarrollo, varios prototipos fallidos, una TS 2068 seriamente averiada y MUCHAS cosas aprendidas en el camino, la interface TS-Pico finalmente está en condiciones de ser presentada en público. La misma permite vincular una TS 2068 (y, con modificaciones, seguramente muchos otros sistemas basados en Z80) a un Rasberry Pico (R-Pico) para almacenamiento y carga de programas (.TAP y .TZX) e imágenes (.SNA, .Z80). La interface además permite la conmutación de ROMs tanto pricipal (HOME ROM) como extendida (EX-ROM), con imágenes almacenadas en una memoria flash externa (no es necesaria NINGUNA MODIFICACIÓN INTERNA al hardware original), y por el mismo método, la simulación de cartuchos en formato .DCK. 
 
 	El hardware de la interface es totalmente genérico, consistiendo básicamente en una R-Pico (cualquier variedad en principio serviría), algunos integrados discretos de la línea 74xx, una memoria Flash para almacenar las ROMs y las imágenes de cartucho, algunas resistencias, capacitores, interruptores y poco más. Lo más complicado de conseguir (al menos en Argentina) es el conector de bus trasero, y dos integrados 74LVC245 de control de bus y adaptación de niveles lógicos. Obviamente, también se necesita la placa impresa, cuyo diseño forma parte del proyecto. En caso de que el almacenamiento provisto por la flash del R-Pico (2MB o 16MB dependiendo del modelo) no sea suficiente para almacenar los archivos (.TAP, .SNA, .DCK etc), se puede adicionar una tarjeta SD, aunque no es imprescindible. El costo total no debería superar los 20-30 dólares.
