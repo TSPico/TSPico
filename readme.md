@@ -118,7 +118,7 @@ Algunas características que se podrían agregar a futuro:
 Hasta que habilite la sección de Discusión y la WiKi del proyecto en esta misma página, dejo una entrada a los dos grupos de discusión donde se podrá consultar más información actualizada, y también dejo un correo electrónico por cualquier consulta puntual:
 
 
-- Entrada grupo Timex Sinclair 2068 (en inglés): *(a completar)*
+- [Entrada grupo Timex Sinclair 2068 (en inglés):](https://groups.io/g/TS2068/message/2304)
 - Entrada foro Retrocomputacion: *(a completar)*
 - Consultas por correo electrónico: tspico.info@gmail.com
 
