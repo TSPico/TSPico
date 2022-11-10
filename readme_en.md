@@ -46,36 +46,6 @@ VIDEO #2:
 https://youtu.be/zoI_xMJVHv8
 
 
-## <p align="center"> CREDITS </p>
-
-
-This interface was made possible by, and is largely based on, the following work:
-
-- The main contribution was from the work made in early 2000s by Dr Beep, for its PC-ZX interface, originally developed for the ZX Spectrum. It was the inspiration for this project. You can access it here:
-	  
-https://trastero.speccy.org/cosas/JL/DrBeep/PC-ZX.html
-
-The logic circuit, the modified SAVE/LOAD Z80 assembler routines were taken from here, and the original Pascal program was ported to uPython, with obvious modifications, to support loading .TAP, .SNA and .Z80 files. Also the routine that prints data from the R-Pico (PC) on the TS (ZX) was adapted from here. This originally allowed printing the directory of files, mounting, renaming or deleting files, etc. This functionality is yet to be developed for the TS Pico
-
-- The idea of using a R-Pico for communication was taken from “Life with David”:
-	  
-https://www.youtube.com/c/LifewithDavid1/videos
-
-mainly the episodes "Captain Pico – The PIO chronicles” 1 to 5, for using PIO as a high speed communication line between the two buses
-
-- A complete introduction to PIO can be found in:
-https://www.youtube.com/watch?v=yYnQYF_Xa8g
-
-- For uPython execution optimization purposes, and consecuently speeding up data transfer, this video was used:
-https://www.youtube.com/watch?v=hHec4qL00x0
-
-- Flash writing routines should be similar to the ones on this project:
-https://github.com/gfoot/picoprom
-
-- .TAP <-> .TZX file format conversion were/will be adapted from:
-https://github.com/shred/tzxtools
-	
-
 ## <p align="center"> GENERAL DESCRIPTION </p>
 
 
@@ -142,5 +112,33 @@ Until the Discussion and WiKi sections are enabled, more up-to-date info an deta
 - Retrocomputacion Forum entry (in spanish): *(pending)*
 - Email address for questions: tspico.info@gmail.com
 
+## <p align="center"> CREDITS </p>
+
+This interface was made possible by, and is largely based on, the following work:
+
+- The main contribution was from the work made in early 2000s by Dr Beep, for its PC-ZX interface, originally developed for the ZX Spectrum. It was the inspiration for this project. You can access it here:
+	  
+https://trastero.speccy.org/cosas/JL/DrBeep/PC-ZX.html
+
+The logic circuit, the modified SAVE/LOAD Z80 assembler routines were taken from here, and the original Pascal program was ported to uPython, with obvious modifications, to support loading .TAP, .SNA and .Z80 files. Also the routine that prints data from the R-Pico (PC) on the TS (ZX) was adapted from here. This originally allowed printing the directory of files, mounting, renaming or deleting files, etc. This functionality is yet to be developed for the TS Pico
+
+- The idea of using a R-Pico for communication was taken from “Life with David”:
+	  
+https://www.youtube.com/c/LifewithDavid1/videos
+
+mainly the episodes "Captain Pico – The PIO chronicles” 1 to 5, for using PIO as a high speed communication line between the two buses
+
+- A complete introduction to PIO can be found in:
+https://www.youtube.com/watch?v=yYnQYF_Xa8g
+
+- For uPython execution optimization purposes, and consecuently speeding up data transfer, this video was used:
+https://www.youtube.com/watch?v=hHec4qL00x0
+
+- Flash writing routines should be similar to the ones on this project:
+https://github.com/gfoot/picoprom
+
+- .TAP <-> .TZX file format conversion were/will be adapted from:
+https://github.com/shred/tzxtools
+	
 
 (c) 2022 - RICARDO JAVIER CALCAGNO
