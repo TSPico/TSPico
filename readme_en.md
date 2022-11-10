@@ -46,10 +46,10 @@ VIDEO #2:
 https://youtu.be/zoI_xMJVHv8
 
 
-## <p align="center"> PROJECT LICENSE. CREDITS </p>
+## <p align="center"> CREDITS </p>
 
 
-The whole project is completely (c) **2022 RICARDO JAVIER CALCAGNO**, for **FREE DISTRIBUTION** of all its components for private and recreational use only. Any commercial purposes is **COMPLETELY PROHIBITED**, unless specifically permitted by the author. Also, this work **MUST BE MENTIONED** in any further development based on it. This interface was made possible by, and is largely based on, the following work:
+This interface was made possible by, and is largely based on, the following work:
 
 - The main contribution was from the work made in early 2000s by Dr Beep, for its PC-ZX interface, originally developed for the ZX Spectrum. It was the inspiration for this project. You can access it here:
 	  
