@@ -1,10 +1,7 @@
-<h1 align="center">TS Pico</h1>
+# <p align="center"> TS Pico </p>
 
-<img src="/static/english.png" alt="English" width="50"> 
-<h3 align="center">Connecting a TS-2068 (and probably other Z80-based microcomputers) to a Raspberry Pico, to load/save programs and sending/receiving arbitrary data
-</h3>
-
----
+<img src="/static/english.png" alt="English" width="50"> </img>
+## <p align="center"> Connecting a TS-2068 (and probably other Z80-based microcomputers) to a Raspberry Pico, to load/save programs and sending/receiving arbitrary data </p>
 
 After over a year of development, many failed prototypes, and a seriously damaged TS 2068 on the road, the TS-Pico interface is finally ready to be presented in public. It allows connecting a TS 2068 (and, with some modifications, many other Z80-based systems) to a Raspberry Pico (R-Pico) to load and save programs (in .TAP and .TZX formats) and savestates (.SNA, .Z80). The interface also performs ROMs switching, both main (HOME) ROM and extended (EX) ROM, with ROMS stored in an external flash memory (absolutely **NO INTERNAL MODIFICATION** to the original hardware or case opening is required), and by the same mechanism, simulation of cartridges in .DCK format 
 
@@ -34,11 +31,8 @@ These are the most prominent features of the TS Pico interface:
 
 The management of the interface can be, as now, interacting with the R-Pico via the USB connection and the attached PC/notebook (I used Thonny for development and testing purposes), or using a front-end, either in BASIC, assembler or a combination of the two. This front-end program is pending of development as now.
 
-<h3 align="center">
-VIDEOS
-</h3>
+## <p align="center"> VIDEOS </p>
 
----
 
 These are two videos showing the interface in action. Please see the videos references for further reference
 
@@ -51,11 +45,9 @@ https://youtu.be/ASCslXNy0ak
 VIDEO #2:
 https://youtu.be/zoI_xMJVHv8
 
-<h3 align="center">
-PROJECT LICENSE. CREDITS
-</h3>
 
----
+## <p align="center"> PROJECT LICENSE. CREDITS </p>
+
 
 The whole project is completely (c) **2022 RICARDO JAVIER CALCAGNO**, for **FREE DISTRIBUTION** of all its components for private and recreational use only. Any commercial purposes is **COMPLETELY PROHIBITED**, unless specifically permitted by the author. Also, this work **MUST BE MENTIONED** in any further development based on it. This interface was made possible by, and is largely based on, the following work:
 
@@ -84,12 +76,8 @@ https://github.com/gfoot/picoprom
 https://github.com/shred/tzxtools
 	
 
+## <p align="center"> GENERAL DESCRIPTION </p>
 
-<h3 align="center">
-GENERAL DESCRIPTION
-</h3>
-
----
 
 This is a block diagram of the interface:
 (*pending*)
@@ -109,10 +97,8 @@ In both cases, the control signals (MREQ, IORQ, RD, WR, etc) are also accessed b
 The rest of the interface, as said earlier, consists on discrete ICs for decoding control signals, level adapting between TS (5V) and R-Pico (3.3V) signals, and bus management and assignation. All control signals processing logic, flash ROMs/DCKs addressing, and data transfer (SAVE/LOAD etc) is implemented in uPython programs, completely user-modifiable and customizable
 
 
-<h3> </h3>
-<h3 align="center"> TECHNICAL DETAILS </h3>
+## <p align="center">  TECHNICAL DETAILS </p>
 
----
 
 As the interface is currently a prototype and a work in progress, the components list could vary, but still is useful as an indication of the interface simplicitiy:
 
@@ -125,9 +111,7 @@ As the interface is currently a prototype and a work in progress, the components
 - A number of decoupling capacitors (0.1 uF)
 
 
-<h3 align="center"> PROJECT STATUS </h3>
-
----
+## <p align="center">  PROJECT STATUS </p>
 
 This table shows the status of the different components of the project
 
@@ -135,7 +119,7 @@ This table shows the status of the different components of the project
 
 
 
-<h3 align="center"> FUTURE </h3>
+## <p align="center">  FUTURE </p>
 
 ---
 
@@ -148,7 +132,7 @@ Some features that could be added in the future:
 
 
 
-<h3 align="center"> MORE INFO </h3>
+## <p align="center">  MORE INFO </p>
 
 ---
 
