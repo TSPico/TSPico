@@ -108,7 +108,7 @@ Some features that could be added in the future:
 
 Until the Discussion and WiKi sections are enabled, more up-to-date info an details can be obtained from the discussion threads above. Also, an email address is provided for specific questions:
 
-- Timex Sinclair 2068 group entry: *(pending)*
+- [Timex Sinclair 2068 group entry:](https://groups.io/g/TS2068/message/2304)
 - Retrocomputacion Forum entry (in spanish): *(pending)*
 - Email address for questions: tspico.info@gmail.com
 
