@@ -4,7 +4,7 @@
 ## <p align="center"> Connecting a TS-2068 (and probably other Z80-based microcomputers) to a Raspberry Pico, to load/save programs and sending/receiving arbitrary data </p>
 
 
-## <p align="center"> ** UPDATE: ** Circuit schematics and PCB design can be accesed with this link: https://oshwlab.com/rcalcagno/ts-pico
+## <p align="center"> ** UPDATE: ** Circuit schematics and PCB design can be accesed on the folder Schematics
 </p>
 
 
