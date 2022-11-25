@@ -155,7 +155,7 @@ https://github.com/gfoot/picoprom
 - Las rutinas de conversión de .TAP a .TZX (y viceversa) fueron adaptadas de:
 https://github.com/shred/tzxtools
 	
-- Gustavo, un miembro del grupo https://groups.io/g/TS2068, me está ayudando a pulir algunos aspectos de la electrónica de la placa. Si me autoriza, publicaré también el apellido. Gracias Gustavo!
+- Gustavo Pane, un miembro del grupo https://groups.io/g/TS2068, me está ayudando a pulir algunos aspectos de la electrónica de la placa. Si me autoriza, publicaré también el apellido. Gracias Gustavo!
 
 
 (c) 2022 - RICARDO JAVIER CALCAGNO
