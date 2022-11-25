@@ -146,6 +146,6 @@ https://github.com/gfoot/picoprom
 - .TAP <-> .TZX file format conversion were/will be adapted from:
 https://github.com/shred/tzxtools
 	
-- Gustavo, a member of https://groups.io/g/TS2068, is helping me redefine some electronics schematics on the board. Should he allow me to, I´ll also publish his lastname. In any case, thank you very much Gustavo!
+- Gustavo Pane, a member of https://groups.io/g/TS2068, is helping me redefine some electronics schematics on the board. Thank you very much Gustavo!
 
 (c) 2022 - RICARDO JAVIER CALCAGNO
