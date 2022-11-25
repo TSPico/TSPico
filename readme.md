@@ -7,7 +7,7 @@
 ## <p align="center"> Interconexión de una TS-2068 (y probablemente otros microcomputadores basados en Z80) con un Raspberry Pico,para cargar/grabar programas y enviar/recibir datos arbitrarios </p>
 
 
-## <p align="center"> ** ACTUALIZACION: ** Se puede consultar el esquemático del circuito y el PCB en el siguiente enlace: https://oshwlab.com/rcalcagno/ts-pico
+## <p align="center"> ** ACTUALIZACION: ** En la carpeta Schematics se puede consultar el esquemático del circuito y el PCB
 </p>
 
 
